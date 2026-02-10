@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator Umur</title>
+
+    <!-- Flatpickr CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
+    <!-- CSS sendiri -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Kalkulator Umur</h1>
+
+      <form id="ageForm">
+        <label for="birthdate">Tanggal Lahir</label>
+        <input
+          type="text"
+          id="birthdate"
+          placeholder="Pilih tanggal lahir"
+          readonly
+        />
+
+        <button type="submit">Hitung Umur</button>
+      </form>
+
+      <!-- Pesan error -->
+      <p class="error" id="errorMessage"></p>
+
+      <!-- Hasil umur -->
+      <div class="result" id="result"></div>
+    </div>
+
+    <!-- Flatpickr JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <!-- Luxon JS -->
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3/build/global/luxon.min.js"></script>
+
+    <!-- JS sendiri -->
+    <script src="script.js"></script>
+  </body>
+</html>
