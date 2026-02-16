@@ -22,12 +22,14 @@ form.addEventListener("submit", function (e) {
   // untuk meriset tampilan error dan hasil
   errorMessage.textContent = "";
   birthdateInput.style.borderColor = "";
+  birthdateInput.style.boxShadow = "";
   result.textContent = "";
 
   // error handling jika input tanggal lahir kosong
   if (!birthdateValue) {
     errorMessage.textContent = "Tanggal lahir wajib diisi.⚠️";
     birthdateInput.style.borderColor = "red";
+    birthdateInput.style.boxShadow = "0 0 5px red";
 
     // Restart animasi
     errorMessage.classList.remove("error");
